@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbf-Qa-HdB">
+                                <rect key="frame" x="20" y="28" width="240" height="40"/>
+                                <color key="backgroundColor" red="0.79827226771296833" green="0.33681174890904453" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Make it Blue">
+                                    <color key="titleShadowColor" red="0.19172947038272126" green="1" blue="0.97509219157256344" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeItButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DjZ-Fj-fNF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUW-Ne-ed3">
+                                <rect key="frame" x="20" y="132" width="240" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.1580211944638592" blue="0.13439341511863268" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="30"/>
+                                <state key="normal" title="Fire the lasers">
+                                    <color key="titleColor" red="1" green="0.74109484216354526" blue="0.28799026322757804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fireTheLasersAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nm0-nl-oKz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixi-tU-mxM">
+                                <rect key="frame" x="197" y="213" width="63" height="63"/>
+                                <state key="normal" image="nextButtonAlternative"/>
+                                <connections>
+                                    <action selector="alternativeImageButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wG-60-ByX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOw-DU-6xE">
+                                <rect key="frame" x="20" y="213" width="63" height="63"/>
+                                <state key="normal" image="nextButton"/>
+                                <connections>
+                                    <action selector="imageOnlyButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPp-ve-d9r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="alternativeImageButton" destination="Ixi-tU-mxM" id="FXE-kM-YJA"/>
+                        <outlet property="fireTheLasersButton" destination="WUW-Ne-ed3" id="jJY-xY-Ggd"/>
+                        <outlet property="imageOnlyButton" destination="rOw-DU-6xE" id="PuB-RB-3Dt"/>
+                        <outlet property="makeItBlueButton" destination="Vbf-Qa-HdB" id="gfz-i5-7f0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nextButton" width="63" height="63"/>
+        <image name="nextButtonAlternative" width="63" height="63"/>
+    </resources>
+</document>
