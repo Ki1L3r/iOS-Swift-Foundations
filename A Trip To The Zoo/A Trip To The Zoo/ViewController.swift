@@ -27,9 +27,18 @@ class ViewController: UIViewController {
         pictureImageView.image = myPenguin.image
         nameLabel.text = myPenguin.name
         speciesLabel.text = myPenguin.species
+        factLabel.text = myPenguin.randomFact()
         
         myPenguin.speak()
+        myPenguin.trumpetANumberOfTimes(5)
+        myPenguin.speakANumberOfTimes(3, isLoud: false)
         
+        let ageOfPenguinInHumanYears = myPenguin.ageInPinguinYearsFromHumanYears();
+        print(ageOfPenguinInHumanYears)
+        
+        let animalInstance = Animal()
+        print(animalInstance.speak())
+        print(animalInstance.randomFact())
     }
 
     override func didReceiveMemoryWarning() {
