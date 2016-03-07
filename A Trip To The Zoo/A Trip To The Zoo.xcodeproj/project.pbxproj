@@ -14,6 +14,13 @@
 		2FD555F41C7E054C00467A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD555F31C7E054C00467A32 /* Assets.xcassets */; };
 		2FD555F71C7E054C00467A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD555F51C7E054C00467A32 /* LaunchScreen.storyboard */; };
 		2FEF09FD1C8ACE4200CD70AF /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF09FC1C8ACE4200CD70AF /* Animal.swift */; };
+		2FEF09FF1C8D6C3900CD70AF /* BodyStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF09FE1C8D6C3900CD70AF /* BodyStatistics.swift */; };
+		2FEF0A011C8D6D3000CD70AF /* PersonalInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A001C8D6D3000CD70AF /* PersonalInformation.swift */; };
+		2FEF0A031C8D71F000CD70AF /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A021C8D71F000CD70AF /* Tiger.swift */; };
+		2FEF0A051C8D739300CD70AF /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A041C8D739300CD70AF /* Factory.swift */; };
+		2FEF0A071C8D787300CD70AF /* Elephant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A061C8D787300CD70AF /* Elephant.swift */; };
+		2FEF0A091C8D79B800CD70AF /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A081C8D79B800CD70AF /* Lion.swift */; };
+		2FEF0A0B1C8D7AB700CD70AF /* LionCub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A0A1C8D7AB700CD70AF /* LionCub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		2FD555F61C7E054C00467A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FD555F81C7E054C00467A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FEF09FC1C8ACE4200CD70AF /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		2FEF09FE1C8D6C3900CD70AF /* BodyStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyStatistics.swift; sourceTree = "<group>"; };
+		2FEF0A001C8D6D3000CD70AF /* PersonalInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInformation.swift; sourceTree = "<group>"; };
+		2FEF0A021C8D71F000CD70AF /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
+		2FEF0A041C8D739300CD70AF /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		2FEF0A061C8D787300CD70AF /* Elephant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elephant.swift; sourceTree = "<group>"; };
+		2FEF0A081C8D79B800CD70AF /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
+		2FEF0A0A1C8D7AB700CD70AF /* LionCub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LionCub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +57,14 @@
 			isa = PBXGroup;
 			children = (
 				2F6850841C85B8E400B6C28F /* Penguin.swift */,
+				2FEF0A001C8D6D3000CD70AF /* PersonalInformation.swift */,
+				2FEF0A041C8D739300CD70AF /* Factory.swift */,
+				2FEF0A081C8D79B800CD70AF /* Lion.swift */,
+				2FEF0A0A1C8D7AB700CD70AF /* LionCub.swift */,
+				2FEF0A061C8D787300CD70AF /* Elephant.swift */,
+				2FEF0A021C8D71F000CD70AF /* Tiger.swift */,
 				2FEF09FC1C8ACE4200CD70AF /* Animal.swift */,
+				2FEF09FE1C8D6C3900CD70AF /* BodyStatistics.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -149,10 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEF0A051C8D739300CD70AF /* Factory.swift in Sources */,
 				2FD555EF1C7E054C00467A32 /* ViewController.swift in Sources */,
+				2FEF09FF1C8D6C3900CD70AF /* BodyStatistics.swift in Sources */,
 				2FEF09FD1C8ACE4200CD70AF /* Animal.swift in Sources */,
+				2FEF0A031C8D71F000CD70AF /* Tiger.swift in Sources */,
 				2FD555ED1C7E054C00467A32 /* AppDelegate.swift in Sources */,
+				2FEF0A0B1C8D7AB700CD70AF /* LionCub.swift in Sources */,
+				2FEF0A011C8D6D3000CD70AF /* PersonalInformation.swift in Sources */,
 				2F6850851C85B8E400B6C28F /* Penguin.swift in Sources */,
+				2FEF0A071C8D787300CD70AF /* Elephant.swift in Sources */,
+				2FEF0A091C8D79B800CD70AF /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

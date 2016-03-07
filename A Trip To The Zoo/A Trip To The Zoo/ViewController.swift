@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var speciesLabel: UILabel!
     @IBOutlet weak var factLabel: UILabel!
     
-    
+    var animals : [Animal] = []
+    var currentAnimalIndex : Int = 0
     
     
     override func viewDidLoad() {
@@ -29,16 +30,43 @@ class ViewController: UIViewController {
         speciesLabel.text = myPenguin.species
         factLabel.text = myPenguin.randomFact()
         
-        myPenguin.speak()
-        myPenguin.trumpetANumberOfTimes(5)
-        myPenguin.speakANumberOfTimes(3, isLoud: false)
+//        myPenguin.speak()
+//        myPenguin.trumpetANumberOfTimes(5)
+//        myPenguin.speakANumberOfTimes(3, isLoud: false)
+//        
+//        let ageOfPenguinInHumanYears = myPenguin.ageInPinguinYearsFromHumanYears();
+//        print(ageOfPenguinInHumanYears)
+//        
+//        let animalInstance = Animal()
+//        print(animalInstance.speak())
+//        print(animalInstance.randomFact())
+//        
+//        print(animalInstance.bodyStatistics.height)
+//        print(animalInstance.personalInformation.name)
         
-        let ageOfPenguinInHumanYears = myPenguin.ageInPinguinYearsFromHumanYears();
-        print(ageOfPenguinInHumanYears)
+//        let myTiger = Tiger()
+//        myTiger.speak()
+//        myTiger.randomFact()
         
-        let animalInstance = Animal()
-        print(animalInstance.speak())
-        print(animalInstance.randomFact())
+        let myTiger = Factory.createTiger()
+        print(myTiger.bodyStatistics.height)
+        print(myTiger.personalInformation.name)
+        
+        let myElephant = Factory.createElephant()
+        print(myElephant.bodyStatistics.height)
+        print(myElephant.personalInformation.name)
+        
+        let myLion = Factory.createLion()
+        print(myLion.bodyStatistics.height)
+        print(myLion.personalInformation.name)
+        
+        let myLionCub = Factory.createLionCub()
+        print(myLionCub.bodyStatistics.height)
+        print(myLionCub.personalInformation.name)
+        
+        animals = [myTiger, myLion, myLionCub, myElephant]
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +75,28 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
-         
+        calcualteIndex()
+        updateView()
+    }
+    
+    func calcualteIndex() {
+        if currentAnimalIndex == animals.count-1 {
+            currentAnimalIndex = 0
+        } else {
+            currentAnimalIndex++
+        }
+    }
+    
+    func updateView() {
+        let currentAnimal = animals[currentAnimalIndex]
+        
+        UIView.animateWithDuration(2) { () -> Void in
+            self.nameLabel.text = currentAnimal.personalInformation.name
+            self.speciesLabel.text = currentAnimal.personalInformation.species
+            self.pictureImageView.image = currentAnimal.personalInformation.image
+            self.factLabel.text = currentAnimal.randomFact()
+        }
+
     }
 
 }
