@@ -14,6 +14,13 @@ class TodoViewController: UIViewController {
     
     var todo: TodoModel!
     var mainVC : TodosViewController!
+    var currentMenuView: UIView?
+    
+    @IBOutlet var datePickerView: DatePickerView!
+    
+    @IBOutlet var repeatView: RepeatView!
+    
+    @IBOutlet var reminderPickerView: DatePickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +48,20 @@ class TodoViewController: UIViewController {
         let secondSwipeView = UISwipeGestureRecognizer(target: self, action: #selector(TodoViewController.respondToSwipe(_:)))
         secondSwipeView.direction = UISwipeGestureRecognizerDirection.Right
         tableView.addGestureRecognizer(secondSwipeView)
+        
+        datePickerView.frame = CGRectMake(view.frame.origin.x, view.frame.height, view.frame.width, datePickerView.frame.height)
+        datePickerView.delegate = self
+        view.addSubview(datePickerView)
+        
+        repeatView.frame = CGRectMake(view.frame.origin.x, view.frame.height, view.frame.width, repeatView.frame.height)
+        repeatView.delegate = self
+        view.addSubview(repeatView)
+        
+        reminderPickerView.frame = CGRectMake(view.frame.origin.x, view.frame
+            .height, view.frame.width, reminderPickerView.frame.height)
+        reminderPickerView.delegate = self
+        view.addSubview(reminderPickerView)
+        
         
         
     }
@@ -84,6 +105,25 @@ class TodoViewController: UIViewController {
     @IBAction func deleteBarButtonPressed(sender: UIBarButtonItem) {
         mainVC.baseArray[mainVC.selectedTodoIndexPath.section-1].removeAtIndex(mainVC.selectedTodoIndexPath.row)
         navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func presentPicker(menuView: UIView) {
+        
+        currentMenuView = menuView
+        
+        UIView.animateWithDuration(0.6) { 
+            menuView.frame = CGRectMake(menuView.frame.origin.x, menuView.frame.origin.y - menuView.frame.size.height, menuView.frame.width, menuView.frame.height)
+        }
+    }
+    
+    func dismissPicker() {
+        
+        UIView.animateWithDuration(1.0) { 
+            if let picker = self.currentMenuView {
+                self.currentMenuView = nil
+                picker.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.size.height, self.view.frame.size.width, picker.frame.height)
+            }
+        }
     }
 }
 
@@ -168,6 +208,33 @@ extension TodoViewController : UITableViewDataSource {
 }
 
 extension TodoViewController : UITableViewDelegate {
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let currentMenu = currentMenuView
+        
+        dismissPicker()
+        
+        var pickerView : UIView?
+        
+        switch (indexPath.section, indexPath.row) {
+        case (0,0):
+            pickerView = datePickerView
+        case (0,1):
+            pickerView = repeatView
+        case (0,2):
+            pickerView = reminderPickerView
+        default:
+            break
+        }
+        
+        if let viewForPicker = pickerView where currentMenu != pickerView {
+            presentPicker(viewForPicker)
+        }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        
+    }
+    
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
@@ -179,5 +246,52 @@ extension TodoViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 10.0
+    }
+}
+
+extension TodoViewController: DatePickerViewDelegate {
+    func removePressed() {
+        if let menuView = currentMenuView {
+            if menuView == datePickerView {
+                todo.dueDate = nil
+            } else if menuView == reminderPickerView {
+                todo.reminder = nil
+            }
+        }
+        dismissPicker()
+        tableView.reloadData()
+    }
+    
+    func datePickerValueChanged(date: NSDate) {
+        if let menuView = currentMenuView {
+            if menuView == datePickerView {
+                todo.dueDate = date
+            } else if menuView == reminderPickerView {
+                todo.reminder = date
+            }
+        }
+        
+        tableView.reloadData()
+    }
+    
+    func donePressed() {
+        dismissPicker()
+    }
+}
+
+extension TodoViewController: RepeatViewDelegate {
+    func done() {
+        dismissPicker()
+    }
+    
+    func remove() {
+        dismissPicker()
+        todo.repeated = nil
+        tableView.reloadData()
+    }
+    
+    func pickerViewDidSelect(type: RepeatType) {
+        todo.repeated = type
+        tableView.reloadData()
     }
 }

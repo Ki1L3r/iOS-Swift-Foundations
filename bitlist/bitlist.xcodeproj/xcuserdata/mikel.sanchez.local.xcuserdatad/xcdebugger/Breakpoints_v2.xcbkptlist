@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "bitlist/TodoViewController.swift"
-            timestampString = "480507675.499654"
+            timestampString = "480620329.290119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "favoriteBarButtonPressed(_:)"
             landmarkType = "5">
          </BreakpointContent>

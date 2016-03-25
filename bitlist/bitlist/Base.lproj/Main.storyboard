@@ -179,10 +179,85 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="datePickerView" destination="1gN-JR-6r5" id="okT-Su-CrN"/>
+                        <outlet property="reminderPickerView" destination="zQ0-xi-W9F" id="KZQ-3B-fSf"/>
+                        <outlet property="repeatView" destination="qR1-fb-Rx8" id="4Fe-fO-sAW"/>
                         <outlet property="tableView" destination="XTY-jA-Q2m" id="ofL-gr-542"/>
                     </connections>
                 </viewController>
+                <view contentMode="scaleToFill" id="zQ0-xi-W9F" userLabel="Reminder Picker View" customClass="DatePickerView" customModule="bitlist" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJZ-2d-hRx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <items>
+                                <barButtonItem title="Remove" id="UrK-qy-C4K">
+                                    <connections>
+                                        <action selector="removeBarButtonItemPressed:" destination="zQ0-xi-W9F" id="HnJ-2u-chX"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="ftJ-T7-Q8t"/>
+                                <barButtonItem enabled="NO" title="Reminder" id="2CK-VY-Kja">
+                                    <connections>
+                                        <action selector="reminderBarButtonItemPressed:" destination="zQ0-xi-W9F" id="WxF-gH-Itd"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="ecG-qV-3H9"/>
+                                <barButtonItem title="Done" id="WXY-hA-gK1">
+                                    <connections>
+                                        <action selector="doneBarButtonItemPress:" destination="zQ0-xi-W9F" id="xUd-Zn-hXE"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gtd-Qq-bU5">
+                            <rect key="frame" x="0.0" y="36" width="375" height="224"/>
+                            <date key="date" timeIntervalSinceReferenceDate="480526643.30578601">
+                                <!--2016-03-24 15:37:23 +0000-->
+                            </date>
+                            <connections>
+                                <action selector="datePickerChanged:" destination="zQ0-xi-W9F" eventType="valueChanged" id="h6B-fe-M8w"/>
+                            </connections>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="datePicker" destination="gtd-Qq-bU5" id="HX2-Tr-6D5"/>
+                    </connections>
+                </view>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XTF-Jz-8ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="qR1-fb-Rx8" customClass="RepeatView" customModule="bitlist" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xd9-Wr-0uQ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <items>
+                                <barButtonItem title="Remove" id="epo-wM-VNf">
+                                    <connections>
+                                        <action selector="removeBarButtonItemPressed:" destination="qR1-fb-Rx8" id="SmK-PK-Q1L"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="j1p-vE-efw"/>
+                                <barButtonItem enabled="NO" title="Repeat" id="lRS-qU-fTq"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="V0V-u3-782"/>
+                                <barButtonItem title="Done" id="wwE-gS-SWX">
+                                    <connections>
+                                        <action selector="doneBarButtonItemPressed:" destination="qR1-fb-Rx8" id="pNx-4F-3SI"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eKy-I1-hdI">
+                            <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="pickerView" destination="eKy-I1-hdI" id="0lE-39-VWL"/>
+                    </connections>
+                </view>
                 <view contentMode="scaleToFill" id="1gN-JR-6r5" userLabel="Date Picker View" customClass="DatePickerView" customModule="bitlist" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

@@ -19,6 +19,7 @@
 		2FEF0A5B1C8DA05500CD70AF /* AddTodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A5A1C8DA05500CD70AF /* AddTodoTableViewCell.swift */; };
 		2FEF0A5E1C8DB05800CD70AF /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A5D1C8DB05800CD70AF /* TodoModel.swift */; };
 		4D1954EB1CA441CF00053C1C /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1954EA1CA441CF00053C1C /* DatePickerView.swift */; };
+		4D19552B1CA5A64F00053C1C /* RepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D19552A1CA5A64F00053C1C /* RepeatView.swift */; };
 		4D3B20B11CA28C8E0051FAE2 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B20B01CA28C8E0051FAE2 /* TodoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		2FEF0A5A1C8DA05500CD70AF /* AddTodoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoTableViewCell.swift; sourceTree = "<group>"; };
 		2FEF0A5D1C8DB05800CD70AF /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		4D1954EA1CA441CF00053C1C /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		4D19552A1CA5A64F00053C1C /* RepeatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatView.swift; sourceTree = "<group>"; };
 		4D3B20B01CA28C8E0051FAE2 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3B20B01CA28C8E0051FAE2 /* TodoViewController.swift */,
+				4D19552A1CA5A64F00053C1C /* RepeatView.swift */,
 				4D1954EA1CA441CF00053C1C /* DatePickerView.swift */,
 			);
 			name = TodoViewController;
@@ -301,6 +304,7 @@
 				2FEF0A211C8D99BA00CD70AF /* bitlist.xcdatamodeld in Sources */,
 				2FEF0A191C8D99BA00CD70AF /* AppDelegate.swift in Sources */,
 				4D3B20B11CA28C8E0051FAE2 /* TodoViewController.swift in Sources */,
+				4D19552B1CA5A64F00053C1C /* RepeatView.swift in Sources */,
 				2FEF0A571C8D9FD900CD70AF /* TodosViewController.swift in Sources */,
 				2FEF0A5E1C8DB05800CD70AF /* TodoModel.swift in Sources */,
 				2FEF0A591C8DA02900CD70AF /* TodoTableViewCell.swift in Sources */,
