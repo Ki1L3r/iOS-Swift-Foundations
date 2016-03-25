@@ -18,6 +18,8 @@
 		2FEF0A591C8DA02900CD70AF /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A581C8DA02900CD70AF /* TodoTableViewCell.swift */; };
 		2FEF0A5B1C8DA05500CD70AF /* AddTodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A5A1C8DA05500CD70AF /* AddTodoTableViewCell.swift */; };
 		2FEF0A5E1C8DB05800CD70AF /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF0A5D1C8DB05800CD70AF /* TodoModel.swift */; };
+		4D1954EB1CA441CF00053C1C /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1954EA1CA441CF00053C1C /* DatePickerView.swift */; };
+		4D3B20B11CA28C8E0051FAE2 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B20B01CA28C8E0051FAE2 /* TodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		2FEF0A581C8DA02900CD70AF /* TodoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoTableViewCell.swift; path = ../TodoTableViewCell.swift; sourceTree = "<group>"; };
 		2FEF0A5A1C8DA05500CD70AF /* AddTodoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoTableViewCell.swift; sourceTree = "<group>"; };
 		2FEF0A5D1C8DB05800CD70AF /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		4D1954EA1CA441CF00053C1C /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		4D3B20B01CA28C8E0051FAE2 /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				2FEF0A4B1C8D9BA000CD70AF /* TodosViewController */,
 				2FEF0A181C8D99BA00CD70AF /* AppDelegate.swift */,
+				4D3B20AF1CA28C5F0051FAE2 /* TodoViewController */,
 				2FEF0A5C1C8DB03E00CD70AF /* Model */,
 				2FEF0A1C1C8D99BA00CD70AF /* Main.storyboard */,
 				2FEF0A221C8D99BA00CD70AF /* Assets.xcassets */,
@@ -151,6 +156,15 @@
 				2FEF0A5D1C8DB05800CD70AF /* TodoModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4D3B20AF1CA28C5F0051FAE2 /* TodoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D3B20B01CA28C8E0051FAE2 /* TodoViewController.swift */,
+				4D1954EA1CA441CF00053C1C /* DatePickerView.swift */,
+			);
+			name = TodoViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,9 +300,11 @@
 			files = (
 				2FEF0A211C8D99BA00CD70AF /* bitlist.xcdatamodeld in Sources */,
 				2FEF0A191C8D99BA00CD70AF /* AppDelegate.swift in Sources */,
+				4D3B20B11CA28C8E0051FAE2 /* TodoViewController.swift in Sources */,
 				2FEF0A571C8D9FD900CD70AF /* TodosViewController.swift in Sources */,
 				2FEF0A5E1C8DB05800CD70AF /* TodoModel.swift in Sources */,
 				2FEF0A591C8DA02900CD70AF /* TodoTableViewCell.swift in Sources */,
+				4D1954EB1CA441CF00053C1C /* DatePickerView.swift in Sources */,
 				2FEF0A5B1C8DA05500CD70AF /* AddTodoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +532,7 @@
 				2FEF0A421C8D99BA00CD70AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FEF0A431C8D99BA00CD70AF /* Build configuration list for PBXNativeTarget "bitlistTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				2FEF0A451C8D99BA00CD70AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FEF0A461C8D99BA00CD70AF /* Build configuration list for PBXNativeTarget "bitlistUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				2FEF0A481C8D99BA00CD70AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

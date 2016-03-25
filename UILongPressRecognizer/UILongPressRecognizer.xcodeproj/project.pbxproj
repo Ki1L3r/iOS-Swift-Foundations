@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D5B54FF1CA27DFE00841DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B54FE1CA27DFE00841DB5 /* AppDelegate.swift */; };
+		4D5B55011CA27DFE00841DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B55001CA27DFE00841DB5 /* ViewController.swift */; };
+		4D5B55041CA27DFE00841DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B55021CA27DFE00841DB5 /* Main.storyboard */; };
+		4D5B55071CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B55051CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodeld */; };
+		4D5B55091CA27DFE00841DB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B55081CA27DFE00841DB5 /* Assets.xcassets */; };
+		4D5B550C1CA27DFE00841DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B550A1CA27DFE00841DB5 /* LaunchScreen.storyboard */; };
+		4D5B55171CA27DFE00841DB5 /* UILongPressRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B55161CA27DFE00841DB5 /* UILongPressRecognizerTests.swift */; };
+		4D5B55221CA27DFE00841DB5 /* UILongPressRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B55211CA27DFE00841DB5 /* UILongPressRecognizerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D5B55131CA27DFE00841DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D5B54F31CA27DFE00841DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5B54FA1CA27DFE00841DB5;
+			remoteInfo = UILongPressRecognizer;
+		};
+		4D5B551E1CA27DFE00841DB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D5B54F31CA27DFE00841DB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D5B54FA1CA27DFE00841DB5;
+			remoteInfo = UILongPressRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D5B54FB1CA27DFE00841DB5 /* UILongPressRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILongPressRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5B54FE1CA27DFE00841DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D5B55001CA27DFE00841DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D5B55031CA27DFE00841DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D5B55061CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UILongPressRecognizer.xcdatamodel; sourceTree = "<group>"; };
+		4D5B55081CA27DFE00841DB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D5B550B1CA27DFE00841DB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D5B550D1CA27DFE00841DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5B55121CA27DFE00841DB5 /* UILongPressRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILongPressRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5B55161CA27DFE00841DB5 /* UILongPressRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILongPressRecognizerTests.swift; sourceTree = "<group>"; };
+		4D5B55181CA27DFE00841DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5B551D1CA27DFE00841DB5 /* UILongPressRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UILongPressRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5B55211CA27DFE00841DB5 /* UILongPressRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILongPressRecognizerUITests.swift; sourceTree = "<group>"; };
+		4D5B55231CA27DFE00841DB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D5B54F81CA27DFE00841DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5B550F1CA27DFE00841DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5B551A1CA27DFE00841DB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D5B54F21CA27DFE00841DB5 = {
+			isa = PBXGroup;
+			children = (
+				4D5B54FD1CA27DFE00841DB5 /* UILongPressRecognizer */,
+				4D5B55151CA27DFE00841DB5 /* UILongPressRecognizerTests */,
+				4D5B55201CA27DFE00841DB5 /* UILongPressRecognizerUITests */,
+				4D5B54FC1CA27DFE00841DB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D5B54FC1CA27DFE00841DB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D5B54FB1CA27DFE00841DB5 /* UILongPressRecognizer.app */,
+				4D5B55121CA27DFE00841DB5 /* UILongPressRecognizerTests.xctest */,
+				4D5B551D1CA27DFE00841DB5 /* UILongPressRecognizerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D5B54FD1CA27DFE00841DB5 /* UILongPressRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				4D5B54FE1CA27DFE00841DB5 /* AppDelegate.swift */,
+				4D5B55001CA27DFE00841DB5 /* ViewController.swift */,
+				4D5B55021CA27DFE00841DB5 /* Main.storyboard */,
+				4D5B55081CA27DFE00841DB5 /* Assets.xcassets */,
+				4D5B550A1CA27DFE00841DB5 /* LaunchScreen.storyboard */,
+				4D5B550D1CA27DFE00841DB5 /* Info.plist */,
+				4D5B55051CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodeld */,
+			);
+			path = UILongPressRecognizer;
+			sourceTree = "<group>";
+		};
+		4D5B55151CA27DFE00841DB5 /* UILongPressRecognizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5B55161CA27DFE00841DB5 /* UILongPressRecognizerTests.swift */,
+				4D5B55181CA27DFE00841DB5 /* Info.plist */,
+			);
+			path = UILongPressRecognizerTests;
+			sourceTree = "<group>";
+		};
+		4D5B55201CA27DFE00841DB5 /* UILongPressRecognizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D5B55211CA27DFE00841DB5 /* UILongPressRecognizerUITests.swift */,
+				4D5B55231CA27DFE00841DB5 /* Info.plist */,
+			);
+			path = UILongPressRecognizerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D5B54FA1CA27DFE00841DB5 /* UILongPressRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5B55261CA27DFE00841DB5 /* Build configuration list for PBXNativeTarget "UILongPressRecognizer" */;
+			buildPhases = (
+				4D5B54F71CA27DFE00841DB5 /* Sources */,
+				4D5B54F81CA27DFE00841DB5 /* Frameworks */,
+				4D5B54F91CA27DFE00841DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UILongPressRecognizer;
+			productName = UILongPressRecognizer;
+			productReference = 4D5B54FB1CA27DFE00841DB5 /* UILongPressRecognizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D5B55111CA27DFE00841DB5 /* UILongPressRecognizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5B55291CA27DFE00841DB5 /* Build configuration list for PBXNativeTarget "UILongPressRecognizerTests" */;
+			buildPhases = (
+				4D5B550E1CA27DFE00841DB5 /* Sources */,
+				4D5B550F1CA27DFE00841DB5 /* Frameworks */,
+				4D5B55101CA27DFE00841DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5B55141CA27DFE00841DB5 /* PBXTargetDependency */,
+			);
+			name = UILongPressRecognizerTests;
+			productName = UILongPressRecognizerTests;
+			productReference = 4D5B55121CA27DFE00841DB5 /* UILongPressRecognizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D5B551C1CA27DFE00841DB5 /* UILongPressRecognizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5B552C1CA27DFE00841DB5 /* Build configuration list for PBXNativeTarget "UILongPressRecognizerUITests" */;
+			buildPhases = (
+				4D5B55191CA27DFE00841DB5 /* Sources */,
+				4D5B551A1CA27DFE00841DB5 /* Frameworks */,
+				4D5B551B1CA27DFE00841DB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D5B551F1CA27DFE00841DB5 /* PBXTargetDependency */,
+			);
+			name = UILongPressRecognizerUITests;
+			productName = UILongPressRecognizerUITests;
+			productReference = 4D5B551D1CA27DFE00841DB5 /* UILongPressRecognizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D5B54F31CA27DFE00841DB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mikel;
+				TargetAttributes = {
+					4D5B54FA1CA27DFE00841DB5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4D5B55111CA27DFE00841DB5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4D5B54FA1CA27DFE00841DB5;
+					};
+					4D5B551C1CA27DFE00841DB5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4D5B54FA1CA27DFE00841DB5;
+					};
+				};
+			};
+			buildConfigurationList = 4D5B54F61CA27DFE00841DB5 /* Build configuration list for PBXProject "UILongPressRecognizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D5B54F21CA27DFE00841DB5;
+			productRefGroup = 4D5B54FC1CA27DFE00841DB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D5B54FA1CA27DFE00841DB5 /* UILongPressRecognizer */,
+				4D5B55111CA27DFE00841DB5 /* UILongPressRecognizerTests */,
+				4D5B551C1CA27DFE00841DB5 /* UILongPressRecognizerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D5B54F91CA27DFE00841DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5B550C1CA27DFE00841DB5 /* LaunchScreen.storyboard in Resources */,
+				4D5B55091CA27DFE00841DB5 /* Assets.xcassets in Resources */,
+				4D5B55041CA27DFE00841DB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5B55101CA27DFE00841DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5B551B1CA27DFE00841DB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D5B54F71CA27DFE00841DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5B55071CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodeld in Sources */,
+				4D5B55011CA27DFE00841DB5 /* ViewController.swift in Sources */,
+				4D5B54FF1CA27DFE00841DB5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5B550E1CA27DFE00841DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5B55171CA27DFE00841DB5 /* UILongPressRecognizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D5B55191CA27DFE00841DB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D5B55221CA27DFE00841DB5 /* UILongPressRecognizerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D5B55141CA27DFE00841DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5B54FA1CA27DFE00841DB5 /* UILongPressRecognizer */;
+			targetProxy = 4D5B55131CA27DFE00841DB5 /* PBXContainerItemProxy */;
+		};
+		4D5B551F1CA27DFE00841DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D5B54FA1CA27DFE00841DB5 /* UILongPressRecognizer */;
+			targetProxy = 4D5B551E1CA27DFE00841DB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D5B55021CA27DFE00841DB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5B55031CA27DFE00841DB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D5B550A1CA27DFE00841DB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D5B550B1CA27DFE00841DB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D5B55241CA27DFE00841DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D5B55251CA27DFE00841DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D5B55271CA27DFE00841DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UILongPressRecognizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.mikel.UILongPressRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D5B55281CA27DFE00841DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UILongPressRecognizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.mikel.UILongPressRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4D5B552A1CA27DFE00841DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UILongPressRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.mikel.UILongPressRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILongPressRecognizer.app/UILongPressRecognizer";
+			};
+			name = Debug;
+		};
+		4D5B552B1CA27DFE00841DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UILongPressRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.mikel.UILongPressRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UILongPressRecognizer.app/UILongPressRecognizer";
+			};
+			name = Release;
+		};
+		4D5B552D1CA27DFE00841DB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UILongPressRecognizerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.mikel.UILongPressRecognizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UILongPressRecognizer;
+			};
+			name = Debug;
+		};
+		4D5B552E1CA27DFE00841DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UILongPressRecognizerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = es.mikel.UILongPressRecognizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UILongPressRecognizer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D5B54F61CA27DFE00841DB5 /* Build configuration list for PBXProject "UILongPressRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5B55241CA27DFE00841DB5 /* Debug */,
+				4D5B55251CA27DFE00841DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D5B55261CA27DFE00841DB5 /* Build configuration list for PBXNativeTarget "UILongPressRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5B55271CA27DFE00841DB5 /* Debug */,
+				4D5B55281CA27DFE00841DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D5B55291CA27DFE00841DB5 /* Build configuration list for PBXNativeTarget "UILongPressRecognizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5B552A1CA27DFE00841DB5 /* Debug */,
+				4D5B552B1CA27DFE00841DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D5B552C1CA27DFE00841DB5 /* Build configuration list for PBXNativeTarget "UILongPressRecognizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D5B552D1CA27DFE00841DB5 /* Debug */,
+				4D5B552E1CA27DFE00841DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D5B55051CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D5B55061CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodel */,
+			);
+			currentVersion = 4D5B55061CA27DFE00841DB5 /* UILongPressRecognizer.xcdatamodel */;
+			path = UILongPressRecognizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4D5B54F31CA27DFE00841DB5 /* Project object */;
+}
